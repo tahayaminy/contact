@@ -11,7 +11,7 @@ function cls() {
   $("glass").style.display = "none";
 }
 function add() {
-  if ($("name").value.length >= 3 && $("name").value.length >= 3) {
+  if ($("name").value.length >= 3 && $("numb").value.length >= 8) {
     var content = `<div>
     <p class="name">${$("name").value}</p>
     <p class="numb">${
@@ -21,5 +21,7 @@ function add() {
   </div>`;
     $("article").insertAdjacentHTML("beforeend", content);
     cls();
+  }else{
+    alert('نام و شماره معتبر وارد کن!');
   }
 }

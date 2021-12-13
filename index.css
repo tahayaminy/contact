@@ -87,6 +87,7 @@ article > div:hover {
     pointer-events: none;
   position: fixed;
   width: 45%;
+  min-width: 200px;
   min-height: 200px;
   top: 50%;
   left: 50%;
